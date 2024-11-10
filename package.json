@@ -1,0 +1,37 @@
+{
+    "name": "sml-language",
+    "displayName": "SML Language Support",
+    "description": "Syntax highlighting for SML files",
+    "version": "0.0.3",
+    "publisher": "CrowdWare",
+    "engines": {
+        "vscode": "^1.74.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "sml",
+            "aliases": ["SML", "sml"],
+            "extensions": [".sml"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "sml",
+            "scopeName": "source.sml",
+            "path": "./syntaxes/sml.tmLanguage.json"
+        }]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/username/sml-language"
+    },
+    "scripts": {
+        "package": "vsce package"
+    },
+    "devDependencies": {
+        "@vscode/vsce": "^3.2.1"
+    },
+    "license": "MIT"
+}
